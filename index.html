@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contrast</title>
 
-  <!-- Satoshi Font -->
+  <!-- Satoshi Font (Fontshare) -->
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap">
 
   <style>
@@ -26,15 +26,19 @@
       width: 100%;
       height: auto;
       display: block;
-      margin: 0;
-      padding: 0;
     }
 
     .container {
-      max-width: 700px;
-      margin: 10vh auto 40px auto;
-      padding: 0 10%;
+      width: 100%;
+      padding: 10vh 20px 40px 20px;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+    }
+
+    .text-block {
+      max-width: 700px;
+      width: 100%;
     }
 
     p {
@@ -60,8 +64,11 @@
 
     @media (max-width: 768px) {
       .container {
-        padding: 0 5%;
-        margin-top: 5vh;
+        padding-top: 5vh;
+      }
+
+      .text-block {
+        max-width: none;
       }
     }
   </style>
@@ -72,31 +79,35 @@
   <img src="header.png" alt="Contrast Header" class="header-image" />
 
   <div class="container">
-    <p>
-      Contrast is a Berlin dub techno label exploring tension, improvisation, and sonic architecture in real time. Founded in 2025, we focus on live-crafted electronic music that balances hypnotic repetition with contrast — in rhythm, tone, and structure. Our releases are often recorded in a single take, embracing imperfection and human timing.
-    </p>
+    <div class="text-block">
 
-    <p>
-      Each release is a conversation between clarity and noise, minimalism and warmth, motion and stillness. What holds it together is the presence — of the artist, the moment, the ear.
-    </p>
+      <p>
+        Contrast is a Berlin dub techno label exploring tension, improvisation, and sonic architecture in real time. Founded in 2025, we focus on live-crafted electronic music that balances hypnotic repetition with contrast — in rhythm, tone, and structure. Our releases are often recorded in a single take, embracing imperfection and human timing.
+      </p>
 
-    <p>
-      We believe that music is not a commodity — it’s an experience. A process of tuning in. Of creating and sharing in the now. Contrast is rooted in that belief.
-    </p>
+      <p>
+        Each release is a conversation between clarity and noise, minimalism and warmth, motion and stillness. What holds it together is the presence — of the artist, the moment, the ear.
+      </p>
 
-    <p>
-      With today’s tools, we can shape frequencies, textures, and space with unprecedented precision. But instead of chasing perfection, we pursue presence — trusting instinct over grid, sensation over style.
-    </p>
+      <p>
+        We believe that music is not a commodity — it’s an experience. A process of tuning in. Of creating and sharing in the now. Contrast is rooted in that belief.
+      </p>
 
-    <p>
-      We’re drawn to tension. Analog vs digital. Structure vs spontaneity. Machine vs hand. These contrasts are not contradictions — they’re materials we sculpt with.
-    </p>
+      <p>
+        With today’s tools, we can shape frequencies, textures, and space with unprecedented precision. But instead of chasing perfection, we pursue presence — trusting instinct over grid, sensation over style.
+      </p>
 
-    <p>
-      Through each release, we offer a fragment of that process: raw, reflective, alive. Contrast is an ongoing meditation — shared, not streamed.
-    </p>
+      <p>
+        We’re drawn to tension. Analog vs digital. Structure vs spontaneity. Machine vs hand. These contrasts are not contradictions — they’re materials we sculpt with.
+      </p>
 
-    <h5>© 2025 Contrast · <a href="mailto:frank@contrast-music.com">Contact & Booking</a> · <a href="https://www.contrast-music.com/legal.html" target="_blank">Legal</a></h5>
+      <p>
+        Through each release, we offer a fragment of that process: raw, reflective, alive. Contrast is an ongoing meditation — shared, not streamed.
+      </p>
+
+      <h5>© 2025 Contrast · <a href="mailto:frank@contrast-music.com">Contact & Booking</a> · <a href="https://www.contrast-music.com/legal.html" target="_blank">Legal</a></h5>
+
+    </div>
   </div>
 
 </body>
