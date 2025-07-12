@@ -23,35 +23,36 @@
     }
 
     body {
-      padding: 0 0 40px 0;
       box-sizing: border-box;
+      padding: 0 20px 40px 20px;
     }
 
     .header-image {
       width: 100%;
+      height: auto;
       display: block;
       margin: 0;
       padding: 0;
-      border: 0;
-    }
-
-    .spacer {
-      height: 7vh;
     }
 
     .container {
       width: 100%;
       max-width: clamp(90%, 80vw, 1200px);
+      margin: 0 auto;
+      padding-top: 10vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      margin: 0 auto;
-      padding: 0 20px;
     }
 
     p {
       margin: 0 0 2rem 0;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin: 0 0 1rem 0;
     }
 
     h5 {
@@ -70,33 +71,47 @@
     a:hover {
       border-bottom: none;
     }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 5vh;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Bild ohne Abstand oben/rechts/links -->
-  <img src="header.png" alt="Header Image" class="header-image" />
-
-  <!-- Abstand darunter -->
-  <div class="spacer"></div>
+  <img src="header.png" alt="Contrast Header" class="header-image" />
 
   <div class="container">
-  
-   <p>Contrast is a Berlin dub techno label exploring tension, improvisation, and sonic architecture in real time. Founded in 2025, we focus on live-crafted electronic music that balances hypnotic repetition with contrast — in rhythm, tone, and structure. Our releases are often recorded in a single take, embracing imperfection and human timing.</p>
 
-    <p>Each release is a conversation between clarity and noise, minimalism and warmth, motion and stillness. What holds it together is the presence — of the artist, the moment, the ear.</p>
+    <p>
+      Contrast is a Berlin dub techno label exploring tension, improvisation, and sonic architecture in real time. Founded in 2025, we focus on live-crafted electronic music that balances hypnotic repetition with contrast — in rhythm, tone, and structure. Our releases are often recorded in a single take, embracing imperfection and human timing.
+    </p>
 
-    <p>We believe that music is not a commodity — it’s an experience. A process of tuning in. Of creating and sharing in the now. Contrast is rooted in that belief.</p>
+    <p>
+      Each release is a conversation between clarity and noise, minimalism and warmth, motion and stillness. What holds it together is the presence — of the artist, the moment, the ear.
+    </p>
 
-    <p>With today’s tools, we can shape frequencies, textures, and space with unprecedented precision. But instead of chasing perfection, we pursue presence — trusting instinct over grid, sensation over style.</p>
+    <p>
+      We believe that music is not a commodity — it’s an experience. A process of tuning in. Of creating and sharing in the now. Contrast is rooted in that belief.
+    </p>
 
-    <p>We’re drawn to tension. Analog vs digital. Structure vs spontaneity. Machine vs hand. These contrasts are not contradictions — they’re materials we sculpt with.</p>
+    <p>
+      With today’s tools, we can shape frequencies, textures, and space with unprecedented precision. But instead of chasing perfection, we pursue presence — trusting instinct over grid, sensation over style.
+    </p>
 
-    <p>Through each release, we offer a fragment of that process: raw, reflective, alive. Contrast is an ongoing meditation — shared, not streamed.</p>
+    <p>
+      We’re drawn to tension. Analog vs digital. Structure vs spontaneity. Machine vs hand. These contrasts are not contradictions — they’re materials we sculpt with.
+    </p>
 
+    <p>
+      Through each release, we offer a fragment of that process: raw, reflective, alive. Contrast is an ongoing meditation — shared, not streamed.
+    </p>
 
-    <h5>© 2025 Contrast · <a href="mailto:contact@contrast-music.com">Contact</a></h5>
+    <h5>© 2025 Contrast · <a href="mailto:frank@contrast-music.com">Contact & Booking</a> · <a href="https://www.contrast-music.com/legal.html" target="_blank">Legal</a></h5>
+
   </div>
 </body>
 </html>
