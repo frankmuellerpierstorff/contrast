@@ -27,6 +27,22 @@
       box-sizing: border-box;
     }
 
+.hero {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
      .container {
   width: 100%;
   max-width: clamp(90%, 80vw, 1200px);
@@ -74,11 +90,8 @@
 
 <body>
 
-  <!-- Header Image -->
-
-  <div class="header-image">
-    <img src="header.png" alt="Contrast Visual" />
-    <!-- Lege dein Bild in denselben Ordner wie diese HTML-Datei -->
+ <div class="hero">
+    <img src="dein-bildname.jpeg" alt="Header Image">
   </div>
 
 <div class="container">
