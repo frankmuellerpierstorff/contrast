@@ -9,43 +9,50 @@
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap">
 
   <style>
-    :root {
-      --font-size-base: clamp(18px, 2.5vw, 22px);
-      --max-width: 960px;
-      --horizontal-padding: clamp(1rem, 5vw, 3rem);
-    }
-
     html, body {
       margin: 0;
       padding: 0;
       font-family: 'Satoshi', sans-serif;
       font-weight: 400;
-      font-size: var(--font-size-base);
       background: radial-gradient(circle at 30% 40%, #f9f9f9, #ffffff);
       color: rgba(0, 0, 0, 0.85);
-      line-height: 1.5;
+      font-size: clamp(24px, 8vw, 64px);
+      line-height: 1.25;
       text-align: left;
       overflow-x: hidden;
     }
 
+    body {
+      padding: 120px 20px 40px 20px;
+      box-sizing: border-box;
+    }
+
     .hero {
-      width: 100%;
-      aspect-ratio: 2 / 1;
-      overflow: hidden;
+      width: 100vw;
+      margin-left: calc(-1 * (100vw - 100%) / 2);
     }
 
     .hero img {
+      display: block;
       width: 100%;
       height: auto;
+      aspect-ratio: 2 / 1;
       object-fit: cover;
-      display: block;
+    }
+
+    .spacer {
+      height: 20vh;
     }
 
     .container {
-      max-width: var(--max-width);
+      width: 100%;
+      max-width: clamp(90%, 80vw, 1200px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 20px;
       margin: 0 auto;
-      padding: 20vh var(--horizontal-padding) 4rem var(--horizontal-padding);
-      box-sizing: border-box;
     }
 
     p {
@@ -53,16 +60,16 @@
     }
 
     h1 {
-      font-size: clamp(40px, 5vw, 64px);
+      font-size: clamp(40px, 8vw, 80px);
       font-weight: 500;
       margin: 0 0 1rem 0;
     }
 
     h5 {
-      font-size: clamp(14px, 1.5vw, 18px);
+      font-size: clamp(16px, 2vw, 24px);
       font-weight: 400;
-      margin-top: 5rem;
-      color: rgba(0, 0, 0, 0.65);
+      margin-top: 10vh;
+      color: rgba(0, 0, 0, 0.85);
     }
 
     a, a:active, a:visited {
@@ -83,8 +90,10 @@
     <img src="header.png" alt="Contrast Header" />
   </div>
 
+  <div class="spacer"></div>
+
   <div class="container">
-    <p>Contrast is a deep techno label exploring tension, improvisation, and sonic architecture in real time. Founded in 2025, we focus on live-crafted electronic music that balances hypnotic repetition with contrast — in rhythm, tone, and structure. Our releases are often recorded in a single take, embracing imperfection and human timing.</p>
+    <p>Contrast is a Berlin dub techno label exploring tension, improvisation, and sonic architecture in real time. Founded in 2025, we focus on live-crafted electronic music that balances hypnotic repetition with contrast — in rhythm, tone, and structure. Our releases are often recorded in a single take, embracing imperfection and human timing.</p>
 
     <p>Each release is a conversation between clarity and noise, minimalism and warmth, motion and stillness. What holds it together is the presence — of the artist, the moment, the ear.</p>
 
